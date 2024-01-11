@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Debit</class>
+ <widget class="QWidget" name="Debit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>20</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Сумма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>50</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Срок размещения, годы</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Процентная ставка</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>116</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Налоговая ставка</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>156</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Периодичность выплат</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Периодичность пополнений</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Периодичность снятий</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_debit_sum">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_debit_term">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_debit_percent">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_result_percent">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>90</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_result_tax">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>190</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdnumber_result_sum">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>300</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>50</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Начисленные проценты</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>160</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Сумма налога</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>270</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Cумма на вкладе к концу срока</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_when_receive">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>В конце срока</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ежедневно</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Еженедельно</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ежемесячно</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ежегодно</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_when_withdraw">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>151</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Раз в месяц</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Раз в 2 месяца</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Раз в полгода</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Раз в год</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_when_add">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>151</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Раз в месяц</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Раз в 2 месяца</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Раз в полгода</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Раз в год</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_capitalisation">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Капитализация процентов</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_tax">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Для резидентов РФ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Для нерезидентов РФ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Отсутствует</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_addition">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Пополнение вклада</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_sum">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>284</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>260</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Сумма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>370</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сумма</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_partial_withdraw_sum">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>393</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_partial_withdrawal">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>Частичные снятия</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_debit_calc">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>400</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>American Typewriter</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Рассчитать</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

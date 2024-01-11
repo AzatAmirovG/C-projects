@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>spaceagecyrillic_regular.ttf</file>
+        <file>4.png</file>
+        <file>5.png</file>
+        <file>6.png</file>
+        <file>wa.png</file>
+    </qresource>
+</RCC>
